@@ -3,11 +3,9 @@ package org.example.springbootmanagementservice;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApplication
-public class SpringBootManagementServiceApplication {
-
+@SpringBootApplication(scanBasePackages = "org.example.springbootmanagementservice")
+public class DocumentServiceApplication {
 	public static void main(String[] args) {
-		SpringApplication.run(SpringBootManagementServiceApplication.class, args);
+		SpringApplication.run(DocumentServiceApplication.class, args);
 	}
-
 }

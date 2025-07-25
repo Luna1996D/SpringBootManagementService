@@ -1,25 +1,22 @@
-package org.example.springbootmanagementservice.model;
+package org.example.springbootmanagementservice.entity;
 
 import jakarta.persistence.*;
-import org.antlr.v4.runtime.misc.NotNull;
-import org.springframework.data.annotation.Id;
+import lombok.Data;
 
 import java.time.LocalDate;
 
+@Data
 @Entity
 public class Document {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @NotBlank
     private String title;
 
-    @NotNull
     private LocalDate uploadDate;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "category_id")
     private Category category;
 
     private String filePath;

@@ -31,3 +31,7 @@ build/
 
 ### VS Code ###
 .vscode/
+
+# Mac və Windows sistem faylları
+.DS_Store
+Thumbs.db
