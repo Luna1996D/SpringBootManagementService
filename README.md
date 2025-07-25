@@ -1,4 +1,4 @@
-# Spring Boot Management Service 
+"# Spring Boot Management Service"
 echo "# Spring Boot Management Service
 
 This is a Spring Boot-based document upload and management service. It provides REST APIs to upload PDF files, manage categories, and store metadata like title, upload date, and file location.
@@ -37,7 +37,3 @@ This is a Spring Boot-based document upload and management service. It provides 
 - Files are stored locally.
 - Only .pdf files are allowed for upload.
 - Make sure the category exists before uploading.
-
-## 📬 Contact
-For any issues, please contact [your_email@example.com].
-" > README.md
